@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "u101",
+    "fullname": "Muki 1",
+    "username": "muki1",
+    "password": "muki1234",
+    "score": 101
+  },
+  {
+    "username": "mmmll",
+    "password": "$2b$10$8.rAI1MpfXk0Ae.cqSSZdugMx.C/Biu7l5csUMubAerrC.KxRdjIa",
+    "fullname": "mmm ll",
+    "_id": "NCHpHM",
+    "score": 10000,
+    "createdAt": 1730151206744,
+    "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+  }
+]
