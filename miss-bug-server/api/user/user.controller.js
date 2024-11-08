@@ -1,6 +1,6 @@
 import { userService } from './userService.js';
 import { loggerService } from '../../services/logger.service.js';
-
+import {socketService} from '../../services/socket.service.js'
 
 export async function getUser(req, res) {
     try {

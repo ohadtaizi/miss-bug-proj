@@ -120,3 +120,96 @@
 30.10.2024, 21:36:33 - INFO - Example app listening on port 3030
 30.10.2024, 21:59:14 - INFO - Example app listening on port 3030
 30.10.2024, 22:08:42 - INFO - Example app listening on port 3030
+5.11.2024, 14:45:15 - INFO - Example app listening on port 3030
+5.11.2024, 15:09:05 - INFO - Example app listening on port 3030
+5.11.2024, 15:59:46 - INFO - Example app listening on port 3030
+6.11.2024, 17:07:28 - INFO - Example app listening on port 3030
+7.11.2024, 16:39:56 - INFO - Example app listening on port 3030
+7.11.2024, 16:58:02 - INFO - Example app listening on port 3030
+7.11.2024, 17:15:26 - INFO - Example app listening on port 3030
+7.11.2024, 17:18:11 - INFO - Example app listening on port 3030
+7.11.2024, 17:19:53 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false},"params":{}}
+7.11.2024, 17:19:53 - DEBUG - auth.service - signup with username: testUser, fullname: Test User
+7.11.2024, 17:19:53 - ERROR - while finding user by username: testUser | MongoInvalidArgumentError: Query filter must be a plain object or ObjectId
+7.11.2024, 17:26:45 - INFO - Example app listening on port 3030
+7.11.2024, 17:26:50 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false},"params":{}}
+7.11.2024, 17:26:50 - DEBUG - auth.service - signup with username: testUser, fullname: Test User
+7.11.2024, 17:30:51 - INFO - Example app listening on port 3030
+7.11.2024, 17:30:55 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false},"params":{}}
+7.11.2024, 17:30:55 - DEBUG - auth.service - signup with username: testUser, fullname: Test User
+7.11.2024, 17:30:55 - DEBUG - auth.route - new account created: {"username":"testUser","password":"$2b$10$dIjQmTqxG63Z6em1j6A39.U.r9o2cIasFH3RWxLz9hePs.znD1hia","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100,"_id":"672cdd2f1915c25a39c57369"}
+7.11.2024, 17:38:02 - INFO - Example app listening on port 3030
+7.11.2024, 17:38:07 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false},"params":{}}
+7.11.2024, 17:38:07 - DEBUG - auth.service - signup with username: testUser, fullname: Test User
+7.11.2024, 17:42:51 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+7.11.2024, 17:42:51 - ERROR - Failed to Login NaN
+7.11.2024, 17:43:11 - INFO - Example app listening on port 3030
+7.11.2024, 17:43:31 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+7.11.2024, 17:43:31 - ERROR - Failed to Login NaN
+7.11.2024, 17:48:24 - INFO - Example app listening on port 3030
+7.11.2024, 17:48:28 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+7.11.2024, 17:48:28 - ERROR - Failed to Login NaN
+7.11.2024, 17:50:55 - INFO - Example app listening on port 3030
+7.11.2024, 17:51:00 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+7.11.2024, 17:51:00 - ERROR - Failed to Login: | logger is not defined
+7.11.2024, 17:55:20 - INFO - Example app listening on port 3030
+7.11.2024, 17:55:26 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+7.11.2024, 17:55:26 - DEBUG - auth.service - login with username: testUser
+7.11.2024, 17:55:26 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+7.11.2024, 18:00:46 - INFO - Example app listening on port 3030
+7.11.2024, 18:00:49 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+7.11.2024, 18:00:49 - DEBUG - auth.service - login with username: testUser
+7.11.2024, 18:00:49 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+7.11.2024, 18:10:03 - INFO - Example app listening on port 3030
+7.11.2024, 18:36:39 - INFO - Example app listening on port 3030
+7.11.2024, 18:36:43 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+7.11.2024, 18:36:43 - DEBUG - auth.service - login with username: testUser
+7.11.2024, 18:36:43 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+7.11.2024, 18:47:26 - INFO - Example app listening on port 3030
+7.11.2024, 18:47:36 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+7.11.2024, 18:47:36 - DEBUG - auth.service - login with username: testUser
+7.11.2024, 18:47:36 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+7.11.2024, 19:08:21 - INFO - Example app listening on port 3030
+7.11.2024, 19:08:38 - DEBUG - auth.service - login with username: testUser
+7.11.2024, 19:08:38 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+7.11.2024, 19:08:38 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+7.11.2024, 19:10:00 - INFO - Example app listening on port 3030
+7.11.2024, 19:10:05 - DEBUG - auth.service - login with username: testUser
+7.11.2024, 19:10:05 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+7.11.2024, 19:10:05 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+7.11.2024, 19:23:44 - INFO - Example app listening on port 3030
+7.11.2024, 19:23:52 - DEBUG - auth.service - login with username: testUser
+7.11.2024, 19:23:52 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+7.11.2024, 19:23:52 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+7.11.2024, 19:24:06 - INFO - Example app listening on port 3030
+7.11.2024, 19:24:11 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+7.11.2024, 19:24:11 - DEBUG - auth.service - login with username: testUser
+7.11.2024, 19:24:11 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+7.11.2024, 19:26:16 - INFO - Example app listening on port 3030
+7.11.2024, 19:26:33 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+7.11.2024, 19:26:33 - DEBUG - auth.service - login with username: testUser
+7.11.2024, 19:26:34 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+7.11.2024, 19:38:42 - INFO - Example app listening on port 3030
+7.11.2024, 19:38:51 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+7.11.2024, 19:38:51 - DEBUG - auth.service - login with username: testUser
+7.11.2024, 19:38:51 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+8.11.2024, 8:03:49 - INFO - Example app listening on port 3030
+8.11.2024, 8:03:52 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+8.11.2024, 8:03:52 - DEBUG - auth.service - login with username: testUser
+8.11.2024, 8:03:52 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+8.11.2024, 8:18:13 - INFO - Example app listening on port 3030
+8.11.2024, 8:19:36 - DEBUG - auth.service - login with username: testUser
+8.11.2024, 8:19:36 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+8.11.2024, 8:19:36 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+8.11.2024, 8:33:15 - INFO - Example app listening on port 3030
+8.11.2024, 8:33:22 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+8.11.2024, 8:33:22 - DEBUG - auth.service - login with username: testUser
+8.11.2024, 8:33:23 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+8.11.2024, 8:40:41 - INFO - Example app listening on port 3030
+8.11.2024, 8:41:48 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+8.11.2024, 8:41:48 - DEBUG - auth.service - login with username: testUser
+8.11.2024, 8:41:48 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+8.11.2024, 9:51:23 - INFO - Example app listening on port 3030
+8.11.2024, 9:51:40 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
+8.11.2024, 9:51:40 - DEBUG - auth.service - login with username: testUser
+8.11.2024, 9:51:40 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}

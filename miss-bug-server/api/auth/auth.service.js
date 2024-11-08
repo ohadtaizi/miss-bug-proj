@@ -20,9 +20,14 @@ export const authService = {
 
 
 function getLoginToken(user) {
-    const str = JSON.stringify(user)
-    const encryptedStr = cryptr.encrypt(str)
-    return encryptedStr
+    const userInfo = { 
+        _id: user._id, 
+        fullname: user.fullname, 
+        score: user.score,
+        isAdmin: user.isAdmin,
+    }
+	return cryptr.encrypt(JSON.stringify(userInfo))
+
 }
 
 
@@ -30,52 +35,49 @@ function validateToken(token) {
     try {
         const json = cryptr.decrypt(token)
         const loggedinUser = JSON.parse(json)
+        loggedinUser
+        console.log('Token validated, user:', loggedinUser); // Log valid token
         return loggedinUser
+        
     } catch (err) {
-        console.log('Invalid login token')
+        console.log('Invalid login token:', err.message); // Log error details
     }
     return null
 }
 
 
 async function login(username, password) {
-    var user = await userService.getByUsername(username)
-    if (!user) throw 'Unkown username'
+	loggerService.debug(`auth.service - login with username: ${username}`)
 
 
-    //  un-comment for real login
-    // const match = await bcrypt.compare(password, user.password)
-    // if (!match) throw 'Invalid username or password'
+	const user = await userService.getByUsername(username)
 
+    if (!user) return Promise.reject('Invalid username or password')
 
-    // Removing passwords and personal data
-    const miniUser = {
-        _id: user._id,
-        fullname: user.fullname,
-        imgUrl: user.imgUrl,
-        score: user.score,
+    delete user.password
+	user._id = user._id.toString()
+	return user
 
-
-        isAdmin: user.isAdmin,
-        // Additional fields required for miniuser
-    }
-    return miniUser
 }
 
 
-async function signup({ username, password, fullname }) {
+async function signup({ username, password, fullname, imgUrl, isAdmin }) {
     const saltRounds = 10
     console.log("Received signup request"); // Add this
 
-
-    if (!username || !password || !fullname) throw 'Missing required signup information';
     loggerService.debug(`auth.service - signup with username: ${username}, fullname: ${fullname}`)
 
-
-    const userExist = await userService.getByUsername(username)
-    if (userExist) throw 'Username already taken'
+	if (!username || !password || !fullname) return Promise.reject('Missing required signup information')
 
 
-    const hash = await bcrypt.hash(password, saltRounds)
-    return userService.save({ username, password: hash, fullname })
-}
+        const userExist = await userService.getByUsername(username)
+        if (userExist) return Promise.reject('Username already taken')
+    
+    
+        const hash = await bcrypt.hash(password, saltRounds)
+        return userService.add({ username, password: hash, fullname, imgUrl, isAdmin }); // Use add instead of save
+
+    }
+    
+    
+    

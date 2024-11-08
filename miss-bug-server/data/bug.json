@@ -94,10 +94,11 @@
     "_id": "BXwY73"
   },
   {
+    "_id": "wNasL8",
     "title": "aaa",
     "description": "ffff",
     "severity": 5,
-    "labels": [],
+    "labels": ["critical","imortant "],
     "createdAt": "2024-10-30T20:09:35.644Z",
     "owner": {
       "_id": "NCHpHM",
@@ -105,6 +106,13 @@
       "imgUrl": "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png",
       "score": 10000
     },
-    "_id": "wNasL8"
+    "msgs":[{
+      "_id": "someMongoId",
+      "txt": "Fix that bug already",
+      "aboutBugId": "someMongoId",
+      "byUserId": "someMongoId"
+      }
+      ]
+   
   }
 ]

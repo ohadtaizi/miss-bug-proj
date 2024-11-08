@@ -11,12 +11,16 @@ export async function login(req, res) {
         loggerService.info('User login: ', user)
         
         const loginToken = authService.getLoginToken(user)
-        res.cookie('loginToken', loginToken, { sameSite: 'None', secure: true })
+        console.log('loginToken',loginToken)
+        res.cookie('loginToken', loginToken )
+       
 
 
         res.json(user)
     } catch (err) {
-        loggerService.error('Failed to Login ' + -err)
+        loggerService.error('Failed to Login:', err.message || err);
+
+
         res.status(401).send({ err: 'Failed to Login' })
     }
 }
