@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useNavigate, useParams } from "react-router"
 
-import { bugService } from "../services/bug.service.remote.js"
+import { bugService } from "../services/bug/bug.service.remote"
 
 export function BugDetails() {
 

@@ -11,7 +11,9 @@ export const bugService = {
     parseBugFields,
     addBugMsg,
     removeBugMsg,
-    add
+    add,
+    _buildSort,
+    _buildCriteria
 }
 const PAGE_SIZE = 2
 // const bugs = utilService.readJsonFile('./data/bug.json')
@@ -150,6 +152,15 @@ async function add(bug) {
 
 
 
+function _buildSort(filterBy) {
+    const sort = {};
+    if (filterBy.sortBy) {
+        sort[filterBy.sortBy] = filterBy.sortDir === '0' ? 1 : -1; // Ascending or Descending
+    }
+    return sort;
+}
+
+
 
 async function addBugMsg(bugId, msg) {
     try {
@@ -234,7 +245,7 @@ function _buildCriteria(filterBy) {
 }
 
 
-function _buildSort(filterBy) {
-    if(!filterBy.sortField) return {}
-    return { [filterBy.sortField]: filterBy.sortDir }
-}
+// function _buildSort(filterBy) {
+//     if(!filterBy.sortField) return {}
+//     return { [filterBy.sortField]: filterBy.sortDir }
+// }

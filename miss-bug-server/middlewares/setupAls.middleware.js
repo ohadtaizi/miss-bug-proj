@@ -7,7 +7,7 @@ export async function setupAsyncLocalStorage(req, res, next) {
     
 	asyncLocalStorage.run(storage, () => {
         if (!req.cookies?.loginToken) {
-            console.log('No login token found in cookies'); // Log missing token
+            // console.log('No login token found in cookies'); // Log missing token
             return next();
         }
         const loggedinUser = authService.validateToken(req.cookies.loginToken)

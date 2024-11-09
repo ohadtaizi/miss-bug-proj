@@ -22,6 +22,7 @@ export const authService = {
 function getLoginToken(user) {
     const userInfo = { 
         _id: user._id, 
+        username: user.username,
         fullname: user.fullname, 
         score: user.score,
         isAdmin: user.isAdmin,

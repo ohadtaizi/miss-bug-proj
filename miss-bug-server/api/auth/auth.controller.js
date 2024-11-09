@@ -36,7 +36,7 @@ export async function signup(req, res) {
         
         const account = await authService.signup(credentials)
         loggerService.debug(`auth.route - new account created: ` + JSON.stringify(account))
-        
+        console.log("test");
         const user = await authService.login(credentials.username, credentials.password)
         loggerService.info('User signup:', user)
         

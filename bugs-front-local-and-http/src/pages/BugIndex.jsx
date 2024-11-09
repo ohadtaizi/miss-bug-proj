@@ -1,6 +1,6 @@
 import { useEffect, useState,useCallback } from 'react';
 
-import { bugService } from "../services/bug.service.remote.js"
+import { bugService } from "../services/bug/bug.service.remote.js"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
 
 import { BugFilter } from "../cmps/BugFilter.jsx"

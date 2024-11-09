@@ -1,8 +1,8 @@
 import Axios from 'axios'
 
 var axios = Axios.create({
-    withCredentials: true,
-})
+    withCredentials: true, // Ensures cookies are sent with requests
+});
 
 const BASE_URL = `//localhost:3030/api/bug/`
 
@@ -14,8 +14,14 @@ export const bugService = {
 	getEmptyBug,
 	getDefaultFilter,
 }
-
+function cleanQueryParams(filterBy) {
+    return Object.fromEntries(
+        Object.entries(filterBy).filter(([_, value]) => value !== '' && value !== null)
+    );
+}
 async function query(filterBy = {}) {
+	const params = cleanQueryParams(filterBy); // Clean query params
+
 	var { data: bugs } = await axios.get(BASE_URL, {params: filterBy})
 
 	return bugs
@@ -46,7 +52,7 @@ function getEmptyBug(title = '', description = '', severity = 0, createdAt = '')
 
 
 function getDefaultFilter() {
-	return { title: '', description: '', severity: 1, createdAt: '', labels: [], sortBy: 'title', sortDir: 1, pageIdx: 0 }
+	return { title: '', description: '', severity: 1, createdAt: '', labels: [], sortBy: 'title', sortDir: 0, pageIdx: 0 }
    
 
 

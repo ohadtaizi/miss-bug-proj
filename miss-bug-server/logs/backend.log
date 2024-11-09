@@ -213,3 +213,34 @@
 8.11.2024, 9:51:40 - INFO - {"baseUrl":"/api/auth","method":"POST","body":{"username":"testUser","password":"1234"},"params":{}}
 8.11.2024, 9:51:40 - DEBUG - auth.service - login with username: testUser
 8.11.2024, 9:51:40 - INFO - User login:  | {"_id":"672cdd2f1915c25a39c57369","username":"testUser","fullname":"Test User","imgUrl":"https://example.com/user.jpg","isAdmin":false,"score":100}
+9.11.2024, 9:38:18 - INFO - Example app listening on port 3030
+9.11.2024, 11:12:28 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:12:29 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:28:12 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:28:13 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:31:50 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:31:51 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:32:56 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:32:57 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:39:36 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:48:04 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:48:05 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:50:39 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:50:40 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:54:48 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:54:57 - INFO - Example app listening on port 3030
+9.11.2024, 11:55:11 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 11:55:12 - ERROR - ReferenceError: carCursor is not defined
+9.11.2024, 14:08:02 - INFO - Example app listening on port 3030
+9.11.2024, 18:40:40 - INFO - Example app listening on port 3030
+9.11.2024, 19:06:54 - INFO - Example app listening on port 3030
+9.11.2024, 19:17:11 - INFO - Example app listening on port 3030
+9.11.2024, 19:17:52 - INFO - Example app listening on port 3030
+9.11.2024, 19:44:30 - INFO - Example app listening on port 3030
+9.11.2024, 19:55:29 - INFO - Example app listening on port 3030
+9.11.2024, 22:40:09 - INFO - Example app listening on port 3030
+9.11.2024, 22:44:33 - INFO - Example app listening on port 3030
+9.11.2024, 22:49:13 - INFO - Example app listening on port 3030
+9.11.2024, 22:54:13 - INFO - Example app listening on port 3030
+9.11.2024, 22:54:40 - INFO - Example app listening on port 3030
+9.11.2024, 22:57:34 - INFO - Example app listening on port 3030

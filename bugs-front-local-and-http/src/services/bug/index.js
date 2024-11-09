@@ -4,14 +4,14 @@ const { DEV, VITE_LOCAL } = import.meta.env
 import { getRandomIntInclusive, makeId } from '../util.service'
 
 
-import { carService as local } from './car.service.local'
-import { carService as remote } from './car.service.remote'
+import { bugService as local } from './bug.service.local'
+import { bugService as remote } from './bug.service.remote'
 
-function getEmptyBug(title = '', description = '', severity = 0, createdAt = '',msgs= []) {
+function getEmptyBug(title = makeId(), description = '', severity = getRandomIntInclusive(1, 10), createdAt = '',msgs= []) {
 	return { title, description, severity, createdAt ,msgs}
 }
 function getDefaultFilter() {
-	return { title: '', description: '', severity: 1, createdAt: '', labels: [], sortBy: 'title', sortDir: 0, pageIdx: 0 }
+	return { title: '', description: '', severity: '', createdAt: '', labels: [], sortBy: '', sortDir: '', pageIdx: '' }
    
 
 
@@ -22,11 +22,11 @@ function getDefaultFilter() {
 
 
 const service = VITE_LOCAL === 'true' ? local : remote
-export const carService = { getEmptyBug, getDefaultFilter, ...service }
+export const bugService = { getEmptyBug, getDefaultFilter, ...service }
 
 
 // Easy access to this service from the dev tools console
 // when using script - dev / dev:local
 
 
-if (DEV) window.carService = carService
+if (DEV) window.bugService = bugService

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { BugPreview } from "./BugPreview.jsx";
 
-import { userService } from "../services/user.service.local.js";
+import { userService } from "../services/user/user.service.remote.js";
 export function BugList({ bugs, onRemoveBug ,onEditBug}) {
     function isAllowed(bug) {
         const loggedinUser = userService.getLoggedinUser()

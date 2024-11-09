@@ -2,12 +2,12 @@ import { authService } from '../auth/auth.service.js'
 import { bugService } from './bugService.js'
 import { loggerService } from '../../services/logger.service.js';
 export async function getBugs(req, res) {
-	const { title, description, severity, labels, createdAt, pageIdx, sortBy, sortDir } = req.query
-	const filterBy = { title, description, severity: +severity, labels, createdAt, pageIdx, sortBy, sortDir: +sortDir }
-	console.log(filterBy)
+	
+
 
 	try {
-		
+
+		const filterBy = req.query.filterBy; // or req.query if `filterBy` has nested structure
 		const bugs = await bugService.query(filterBy)
 		res.send(bugs)
 	} catch (err) {
@@ -128,6 +128,7 @@ export async function getBug(req, res) {
 		res.status(400).send(err)
 	}
 }
+
 
 export async function removeBug(req, res) {
 
